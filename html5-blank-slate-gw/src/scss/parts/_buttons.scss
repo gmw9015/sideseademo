@@ -1,0 +1,27 @@
+// Buttons
+// ----------------------------------------------
+.button {
+    text-transform: uppercase;
+    font-weight: 800;
+    font-family: Arial;
+    letter-spacing: rem-calc(0.1);
+    font-size: rem-calc(14.5);
+    border-radius: rem-calc(3);
+    padding: rem-calc(20 25);
+    &.primary {
+        border: 2px solid  map-get($foundation-palette, primary);
+        background: transparent;
+        color: map-get($foundation-palette, primary);
+    }
+    &.secondary {
+        color: $white;
+    }
+    &.tertiary {
+        border: 2px solid map-get($foundation-palette, primary);
+    }
+    &.white {
+        border: 2px solid $white;
+        color: $white;
+        background: transparent;
+    }
+}
