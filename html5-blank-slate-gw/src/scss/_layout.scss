@@ -103,28 +103,29 @@ input.input-group-field {
 }
 
 
-  @media (max-width: 1080px) {
-        .top-bar-right {
-          margin-right: 30px;
-        }
+@media (max-width: 1080px) {
+    .top-bar-right {
+      margin-right: 30px;
+    }
+    .banner-front-page h1 {
+      font-size: 3.5rem;
+    }
+}
+
+
+@media (max-width: 1020px) {
+    .top-bar-right {
+      text-align: center;
+      .button {
+        padding: rem-calc(15 35);
+      }
     }
 
-
-    @include breakpoint(small only) { 
-        .top-bar-right {
-          margin-top: 20px;
-          margin-right: 0px;
-          text-align: center;
-          .button {
-            padding: rem-calc(15 35);
-          }
-        }
-
-        .footer-right {
-          text-align: left; 
-        }
-        
+    body .three-column-footer-contact-form-container .three-column-footer-contact-form .footer-right {
+      text-align: left; 
     }
+    
+}
 
 
 /* Footer */
@@ -148,6 +149,12 @@ input.input-group-field {
 
 .three-column-footer-contact-form-container {
   background-color: #195422;
+
+  .footer-left,
+  .footer-center,
+  .footer-right {
+    margin-bottom: 20px;
+  }
 
   .three-column-footer-contact-form {
     @include grid-row();
